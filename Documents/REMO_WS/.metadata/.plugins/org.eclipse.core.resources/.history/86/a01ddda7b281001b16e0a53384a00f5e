@@ -18,7 +18,8 @@ public class RunStatechart {
 		RuntimeService.getInstance().registerStatemachine(s, 200);
 		s.init();
 		s.enter();
-	
+		s.runCycle();
+		print(s);
 		
 		while(true) {
 			Scanner sc = new Scanner(System.in);
